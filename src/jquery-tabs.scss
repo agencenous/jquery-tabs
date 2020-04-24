@@ -24,7 +24,6 @@
         cursor: pointer;
         background: transparent;
         color: #555454;
-        text-transform: uppercase;
         font-weight: 900;
       }
       &.active .front-tabs-button,
@@ -43,3 +42,5 @@
     }
   }
 }
+
+@import 'wordpress';

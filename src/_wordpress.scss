@@ -1,0 +1,54 @@
+
+.wp-admin{
+  .front-tabed{
+  .front-tabs-menu{
+    border-bottom: 1px solid #ccc;
+    .front-tabs-menu-item{
+	border: none;
+	margin: 0 0 -1px;
+	.front-tabs-button{
+	border: 1px solid #ccc;
+	border-bottom: none;
+	margin-left: .5em;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.71428571;
+	font-weight: 600;
+	background: #e5e5e5;
+	color: #555;
+	}
+        &.active .front-tabs-button,
+      .front-tabs-button:focus,
+      .front-tabs-button:hover{
+            border-bottom: 1px solid #f1f1f1;
+	    background: #f1f1f1;
+	    color: #000;
+        }
+    }
+  }
+ }
+.front-tabs-content{
+.front-tabed{
+  .front-tabs-menu{
+border: none;
+.front-tabs-menu-item{
+	border: none;
+	.front-tabs-button{
+	border: none;
+	padding: 0;
+	font-size: 12px;
+	background: transparent;
+	color: #0073aa;
+	font-weight: 400;
+	}
+        &.active .front-tabs-button,
+      .front-tabs-button:focus,
+      .front-tabs-button:hover{
+            text-decoration: underline;
+	    color: #0073aa;
+        }
+    }
+}
+}
+}
+}
