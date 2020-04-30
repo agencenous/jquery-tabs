@@ -41,7 +41,9 @@ jQuery('.content').createTabs({
 
 - hideUntilLast
 - prevText,
-- nextText
+- nextText,
+- prevClass,
+- nextClass
 
 Full example
 
@@ -51,6 +53,21 @@ jQuery('#form').createTabs({
 		childrenTitle: '.tab-title',
 		hideUntilLast: 'input[type=submit]',
 		prevText: '« back',
-		nextText: 'Next »'
+		nextText: 'Next »',
+		prevClass: 'btn',
+		nextClass: 'btn'
 });
+```
+
+### Triggers
+
+```javascript
+jQuery('#form')
+  .on('tab_ready', function(){
+    console.log('READY!');
+  })
+  .on('tab_change', function(){
+    console.log('TAB CHANGED!');
+  })
+.createTabs();
 ```
