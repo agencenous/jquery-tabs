@@ -46,10 +46,12 @@ const js_tab_openTab = function(selector){
      stuffToHide.show();
    }
  }
+ TabRoot.trigger('tab_change');
 }
 
 $.fn.createTabs = function(params) {
   if(undefined === params) params = {};
+  const lmnt = $(this);
   const childrenSelector = undefined !== params.children ? params.children : 'section';
   const childrenTitle = undefined !== params.childrenTitle ? params.childrenTitle : 'h2';
   const fade = undefined !== params.fade ? params.fade : '500';
@@ -91,6 +93,6 @@ $.fn.createTabs = function(params) {
   $('.front-tabs-link', $(this)).unbind('click').click(function(){
     js_tab_openTab($(this).attr('data-id').substring(4));
   }).first().trigger('click');
-  return $(this);
+  lmnt.trigger('tab_ready');
+  return lmnt;
 }
-
