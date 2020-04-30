@@ -5,7 +5,7 @@
  */
 const $ = window.jQuery;
 
-const str_to_slug = function(str) {
+const js_tab_str2slug = function(str) {
   str = str.replace(/^\s+|\s+$/g, ''); // trim
   str = str.toLowerCase();
 
@@ -67,7 +67,7 @@ $.fn.createTabs = function(params) {
     var Title = TitleNode.text();
     var Id = $(this).attr('id');
     if(!Id){
-      Id = str_to_slug(Title);
+      Id = js_tab_str2slug(Title);
       $(this).attr('id', Id);
     }
     var Item = $('<li class="front-tabs-menu-item"><span class="front-tabs-button front-tabs-link" id="tab-'+Id+'" data-id="tab-'+Id+'">'+TitleNode.html()+'</span></li>');
