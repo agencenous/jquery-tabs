@@ -55,6 +55,8 @@ $.fn.createTabs = function(params) {
   const fade = undefined !== params.fade ? params.fade : '500';
   const PrevText = undefined !== params.prevText ? params.prevText : false;
   const NextText = undefined !== params.nextText ? params.nextText : false;
+  const PrevClass = undefined !== params.prevClass ? params.prevClass : '';
+  const NextClass = undefined !== params.nextClass ? params.nextClass : '';
   const HideUntilLast = undefined !== params.hideUntilLast ? params.hideUntilLast : false;
   var Menu = $('<ul class="front-tabs-menu"></ul>');
   var children = $(childrenSelector, $(this));
@@ -79,10 +81,10 @@ $.fn.createTabs = function(params) {
       var PrevNextNev = $('<div class="front-tabs-nav"></div>');
       $(this).append(PrevNextNev);
       if($(this)[0].previousSibling){
-        PrevNextNev.append('<span class="front-tabs-link" data-id="tab-'+$($(this)[0].previousSibling).attr('id')+'">'+PrevText+'</span>');
+        PrevNextNev.append('<span class="front-tabs-link '+PrevClass+'" data-id="tab-'+$($(this)[0].previousSibling).attr('id')+'">'+PrevText+'</span>');
       }
       if($(this)[0].nextSibling){
-        PrevNextNev.append('<span class="front-tabs-link" data-id="tab-'+$($(this)[0].nextSibling).attr('id')+'">'+NextText+'</span>');
+        PrevNextNev.append('<span class="front-tabs-link '+NextClass+'" data-id="tab-'+$($(this)[0].nextSibling).attr('id')+'">'+NextText+'</span>');
       }
     }
   });
@@ -91,3 +93,4 @@ $.fn.createTabs = function(params) {
   }).first().trigger('click');
   return $(this);
 }
+
