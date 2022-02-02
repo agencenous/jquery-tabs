@@ -2,7 +2,7 @@
     "name": "bastienho/jquery-tabs",
     "description": "Simply add tabs.",
     "type": "jquery-plugin",
-    "license": "gplv2",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Bastien Ho",
