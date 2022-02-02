@@ -1,0 +1,13 @@
+{
+    "name": "bastienho/jquery-tabs",
+    "description": "Simply add tabs.",
+    "type": "jquery-plugin",
+    "license": "gplv2",
+    "authors": [
+        {
+            "name": "Bastien Ho",
+            "email": "bastien@avecnous.eu"
+        }
+    ],
+    "require": {}
+}
