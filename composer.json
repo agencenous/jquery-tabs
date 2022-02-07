@@ -3,6 +3,7 @@
     "description": "Simply add tabs.",
     "type": "jquery-plugin",
     "license": "GPL-2.0-or-later",
+    "version": "1.0.1",
     "minimum-stability": "dev",
     "authors": [
         {
