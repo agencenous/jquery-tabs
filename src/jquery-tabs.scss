@@ -41,6 +41,13 @@
       top: 0;
     }
   }
+  .front-tabs-nav{
+      display: flex;
+      justify-content: space-between;
+  }
+  .front-tabs-link{
+      cursor: pointer;
+  }
 }
 
 @import 'wordpress';
