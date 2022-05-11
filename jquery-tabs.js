@@ -90,7 +90,7 @@ $.fn.createTabs = function(params) {
       }
     }
   });
-  $('.front-tabs-link', $(this)).unbind('click').click(function(){
+  $('.front-tabs-link', $(this)).unbind('click').on('click', function(){
     js_tab_openTab($(this).attr('data-id').substring(4));
   }).first().trigger('click');
   lmnt.trigger('tab_ready');
