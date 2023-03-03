@@ -47,6 +47,9 @@ const js_tab_openTab = function(selector){
    }
  }
  TabRoot.trigger('tab_change');
+ var page = Target.index() + 1;
+ TabRoot.attr('data-page', page);
+ TabRoot.trigger('tab_open_' + page);
 }
 
 $.fn.createTabs = function(params) {
