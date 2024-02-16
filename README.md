@@ -2,11 +2,17 @@
 
 Simply add tabs.
 
+## Install
+
+```bash
+composer require agencenous/jquery-tabs
+```
+
 ## Usage
 
 ```html
-<style rel="stylesheet" href="jquery-tabs/jquery-tabs.css"/>
-<script" src="jquery-tabs/jquery-tabs.js"/>
+<style rel="stylesheet" href="/vendor/agencenous/jquery-tabs/jquery-tabs.css"/>
+<script" src="/vendor/agencenous/jquery-tabs/jquery-tabs.js"/>
 ```
 
 ## Example
