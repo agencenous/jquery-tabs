@@ -12,7 +12,7 @@ composer require agencenous/jquery-tabs
 
 ```html
 <style rel="stylesheet" href="/vendor/agencenous/jquery-tabs/jquery-tabs.css"/>
-<script" src="/vendor/agencenous/jquery-tabs/jquery-tabs.js"/>
+<script src="/vendor/agencenous/jquery-tabs/jquery-tabs.js"/>
 ```
 
 ## Example
